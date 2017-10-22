@@ -1,0 +1,6 @@
+framework module Pods_InfiniteScrollView {
+  umbrella header "Pods-InfiniteScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}
