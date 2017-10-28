@@ -9,7 +9,7 @@
 import UIKit
 import AlamofireImage
 
-class ImageTableViewCell: UITableViewCell {
+internal class ImageTableViewCell: UITableViewCell {
 
     @IBOutlet weak var leftImageView: UIImageView!
     @IBOutlet weak var middleImageView: UIImageView!
@@ -26,7 +26,7 @@ class ImageTableViewCell: UITableViewCell {
         refreshViewModel()
     }
     
-    fileprivate func refreshViewModel() {
+    private func refreshViewModel() {
         if let images = self.cellViewModel?.images {
             for i in 0..<images.count {
                 let image = images[i]

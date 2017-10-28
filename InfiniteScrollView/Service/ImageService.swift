@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol ImageService {
+public protocol ImageService {
     func imageList(searchText: String,
-                   completion: @escaping (_ result: [Image]?) -> Void)
+                   completion: @escaping (_ result: [DownloadableImage]?) -> Void)
     
     func paginate(searchText: String,
-                  completion: @escaping (_ result: [Image]?) -> Void)
+                  completion: @escaping (_ result: [DownloadableImage]?) -> Void)
     
     func resetPagination()
 }

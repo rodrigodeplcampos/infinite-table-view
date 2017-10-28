@@ -11,5 +11,5 @@ import Foundation
 protocol InfiniteScrollInteractor {
     func imageList(searchText: String,
                    newSearch: Bool,
-                   completion: @escaping (_ result: [Image]?) -> Void)
+                   completion: @escaping (_ result: [DownloadableImage]?) -> Void)
 }

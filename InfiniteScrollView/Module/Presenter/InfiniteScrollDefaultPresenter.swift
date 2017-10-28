@@ -11,8 +11,8 @@ import Foundation
 class InfiniteScrollDefaultPresenter: InfiniteScrollPresenter {
     let interactor: InfiniteScrollInteractor
     weak var view: InfiniteScrollView?
-    var searchText: String
-    var viewModel: ImageListViewModel?
+    private var searchText: String
+    private var viewModel: ImageListViewModel?
     
     required init(interactor: InfiniteScrollInteractor, view: InfiniteScrollView) {
         self.interactor = interactor
@@ -40,7 +40,7 @@ class InfiniteScrollDefaultPresenter: InfiniteScrollPresenter {
         load(newSearch: false)
     }
     
-    fileprivate func load(newSearch: Bool) {
+    private func load(newSearch: Bool) {
         self.interactor.imageList(searchText: searchText, newSearch: newSearch) { [weak self] response in
             if let images = response {
                 let newViewModel = ImageViewModelBuilder.buildViewModel(images: images, currentViewModel: self?.viewModel)

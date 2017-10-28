@@ -10,15 +10,15 @@ import Foundation
 
 class InfiniteScrollDefaultInteractor: InfiniteScrollInteractor {
     
-    let imageService: ImageService
+    private let imageService: ImageService
     
-    init(service: ImageService) {
+    internal init(service: ImageService) {
         self.imageService = service
     }
     
     func imageList(searchText: String,
                     newSearch: Bool,
-                   completion: @escaping (_ result: [Image]?) -> Void) {
+                   completion: @escaping (_ result: [DownloadableImage]?) -> Void) {
         if newSearch == true {
             self.imageService.resetPagination()
         }

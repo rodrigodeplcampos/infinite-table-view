@@ -8,17 +8,16 @@
 
 import Foundation
 
-struct ImageListViewModel {
-    var list:[ImageCellViewModel]
+public struct ImageListViewModel {
+    public var list:[ImageCellViewModel]
 }
 
-struct ImageCellViewModel {
-    var images:[ImageViewModel]
+public struct ImageCellViewModel {
+    public var images:[ImageViewModel]
 }
 
-struct ImageViewModel {
-    var title: String?
-    let url: String
+public struct ImageViewModel {
+    internal let url: String
     
     init(url: String) {
         self.url = url

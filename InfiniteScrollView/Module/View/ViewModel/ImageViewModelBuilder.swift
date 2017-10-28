@@ -9,7 +9,7 @@
 import Foundation
 
 class ImageViewModelBuilder {
-    static func buildViewModel(images: [Image], currentViewModel: ImageListViewModel?) -> ImageListViewModel {
+    static func buildViewModel(images: [DownloadableImage], currentViewModel: ImageListViewModel?) -> ImageListViewModel {
         let imageViewModelArray = ImageViewModelBuilder.convertFromEntityToViewModel(images: images)
         
         var counter = 1
@@ -39,11 +39,13 @@ class ImageViewModelBuilder {
         return ImageListViewModel(list: imageCellViewModelArray)
     }
     
-    static fileprivate func convertFromEntityToViewModel(images: [Image]) -> [ImageViewModel] {
+    static private func convertFromEntityToViewModel(images: [DownloadableImage]) -> [ImageViewModel] {
         return images.map {
-            var imageViewModel = ImageViewModel(url: $0.url)
-            imageViewModel.title = $0.title
-            return imageViewModel
+            guard let imageURL = $0.imageUrl() else {
+                return ImageViewModel(url: "")
+            }
+            
+            return ImageViewModel(url: imageURL)
         }
     }
 }

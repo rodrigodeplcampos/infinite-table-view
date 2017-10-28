@@ -6,9 +6,9 @@
 //  Copyright © 2017 Rodrigo Campos. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-protocol InfiniteScrollView: class {
+public protocol InfiniteScrollView: class {
     func displayImages(images: ImageListViewModel)
     func displaySearchText(searchText: String)
 }

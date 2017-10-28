@@ -11,7 +11,7 @@ import UIKit
 class InfiniteScrollViewController: UIViewController, InfiniteScrollView {
 
     @IBOutlet weak var tableView: UITableView!
-    let searchController = UISearchController(searchResultsController: nil)
+    private let searchController = UISearchController(searchResultsController: nil)
     
     var delegateDataSource: InfiniteScrollDelegateDataSource?
     var presenter: InfiniteScrollPresenter?
@@ -54,7 +54,7 @@ class InfiniteScrollViewController: UIViewController, InfiniteScrollView {
         }
     }
     
-    func toggleDelegateMode(mode: TableViewDelegateMode) {
+    fileprivate func toggleDelegateMode(mode: TableViewDelegateMode) {
         self.delegateDataSource?.toggleDelegateMode(mode: mode)
         DispatchQueue.main.async {
             self.tableView.reloadData()

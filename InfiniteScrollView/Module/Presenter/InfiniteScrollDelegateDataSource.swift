@@ -17,8 +17,8 @@ class InfiniteScrollDelegateDataSource: NSObject, UITableViewDelegate, UITableVi
     
     weak var presenter: InfiniteScrollPresenter?
     var viewModel: ImageListViewModel?
-    fileprivate var searchHistory = [String]()
-    fileprivate var delegateMode: TableViewDelegateMode = .search
+    private var searchHistory = [String]()
+    private var delegateMode: TableViewDelegateMode = .search
     
     required init(presenter: InfiniteScrollPresenter) {
         self.presenter = presenter

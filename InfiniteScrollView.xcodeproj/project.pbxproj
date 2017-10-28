@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3BCBAF1F9FB89A00F75F1E /* InfiniteScrollViewModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BCBAE1F9FB89A00F75F1E /* InfiniteScrollViewModuleBuilder.swift */; };
+		1C3BCBB11F9FC27C00F75F1E /* InfiniteScrollViewDefaultModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BCBB01F9FC27C00F75F1E /* InfiniteScrollViewDefaultModuleBuilder.swift */; };
 		1C3F98151F9B4F2000948C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F98141F9B4F2000948C55 /* AppDelegate.swift */; };
 		1C3F981C1F9B4F2000948C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3F981B1F9B4F2000948C55 /* Assets.xcassets */; };
 		1C3F981F1F9B4F2000948C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3F981D1F9B4F2000948C55 /* LaunchScreen.storyboard */; };
-		1C3F982A1F9B4F2000948C55 /* InfiniteScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F98291F9B4F2000948C55 /* InfiniteScrollViewTests.swift */; };
+		1C4E4FF11FA26C9700EE0C16 /* FlickrImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4E4FF01FA26C9700EE0C16 /* FlickrImageModel.swift */; };
+		1C4E4FF51FA2756800EE0C16 /* DownloadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4E4FF41FA2756800EE0C16 /* DownloadableImage.swift */; };
+		1C4F439B1FA311D800ED1A73 /* ImageViewModelBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4F439A1FA311D800ED1A73 /* ImageViewModelBuilderSpec.swift */; };
+		1C4F439E1FA3129200ED1A73 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4F439D1FA3129200ED1A73 /* TestUtils.swift */; };
 		1C759A0E1F9B511000A90906 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C759A0D1F9B511000A90906 /* ImageService.swift */; };
 		1C759A131F9B531C00A90906 /* FlickrImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C759A121F9B531C00A90906 /* FlickrImageService.swift */; };
-		1C759A161F9B58A400A90906 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C759A151F9B58A400A90906 /* Image.swift */; };
 		1C759A1A1F9B6A9D00A90906 /* InfiniteScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C759A181F9B6A9D00A90906 /* InfiniteScrollViewController.swift */; };
 		1C759A1B1F9B6A9D00A90906 /* InfiniteScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C759A191F9B6A9D00A90906 /* InfiniteScrollViewController.xib */; };
 		1C759A201F9B6D8100A90906 /* InfiniteScrollDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C759A1F1F9B6D8100A90906 /* InfiniteScrollDelegateDataSource.swift */; };
@@ -24,8 +28,10 @@
 		1C759A2B1F9B7BB300A90906 /* InfiniteScrollDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C759A2A1F9B7BB300A90906 /* InfiniteScrollDefaultPresenter.swift */; };
 		1C759A2E1F9B7F5F00A90906 /* InfiniteScrollDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C759A2D1F9B7F5F00A90906 /* InfiniteScrollDefaultInteractor.swift */; };
 		1C759A331F9B8B6100A90906 /* InfiniteScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C759A321F9B8B6100A90906 /* InfiniteScrollView.swift */; };
+		1C965AF61FA281DF00FC15EB /* flickr_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C965AF51FA281DF00FC15EB /* flickr_response.json */; };
 		1CE77CDA1F9BFFBE00FADC90 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE77CD91F9BFFBE00FADC90 /* ImageViewModel.swift */; };
 		1CE77CDC1F9C01F000FADC90 /* ImageViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE77CDB1F9C01F000FADC90 /* ImageViewModelBuilder.swift */; };
+		4D4982CFD12A67E8F929C8D0 /* Pods_InfiniteScrollViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7197258EE08616A1460B05C9 /* Pods_InfiniteScrollViewTests.framework */; };
 		D5762D0EDB5F45A80135E2F8 /* Pods_InfiniteScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274145DDAFEF4885EE865833 /* Pods_InfiniteScrollView.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,18 +46,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06901FBB7E908FB8E47931A7 /* Pods-InfiniteScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollViewTests/Pods-InfiniteScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A2BA35BEA79A4BBC88C964E /* Pods-InfiniteScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollView/Pods-InfiniteScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		1C3BCBAE1F9FB89A00F75F1E /* InfiniteScrollViewModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollViewModuleBuilder.swift; sourceTree = "<group>"; };
+		1C3BCBB01F9FC27C00F75F1E /* InfiniteScrollViewDefaultModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollViewDefaultModuleBuilder.swift; sourceTree = "<group>"; };
 		1C3F98111F9B4F2000948C55 /* InfiniteScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3F98141F9B4F2000948C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C3F981B1F9B4F2000948C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C3F981E1F9B4F2000948C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C3F98201F9B4F2000948C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C3F98251F9B4F2000948C55 /* InfiniteScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C3F98291F9B4F2000948C55 /* InfiniteScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollViewTests.swift; sourceTree = "<group>"; };
 		1C3F982B1F9B4F2000948C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4E4FF01FA26C9700EE0C16 /* FlickrImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageModel.swift; sourceTree = "<group>"; };
+		1C4E4FF41FA2756800EE0C16 /* DownloadableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableImage.swift; sourceTree = "<group>"; };
+		1C4F439A1FA311D800ED1A73 /* ImageViewModelBuilderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelBuilderSpec.swift; sourceTree = "<group>"; };
+		1C4F439D1FA3129200ED1A73 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 		1C759A0D1F9B511000A90906 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		1C759A121F9B531C00A90906 /* FlickrImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageService.swift; sourceTree = "<group>"; };
-		1C759A151F9B58A400A90906 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1C759A181F9B6A9D00A90906 /* InfiniteScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollViewController.swift; sourceTree = "<group>"; };
 		1C759A191F9B6A9D00A90906 /* InfiniteScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfiniteScrollViewController.xib; sourceTree = "<group>"; };
 		1C759A1F1F9B6D8100A90906 /* InfiniteScrollDelegateDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollDelegateDataSource.swift; sourceTree = "<group>"; };
@@ -62,10 +73,13 @@
 		1C759A2A1F9B7BB300A90906 /* InfiniteScrollDefaultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollDefaultPresenter.swift; sourceTree = "<group>"; };
 		1C759A2D1F9B7F5F00A90906 /* InfiniteScrollDefaultInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollDefaultInteractor.swift; sourceTree = "<group>"; };
 		1C759A321F9B8B6100A90906 /* InfiniteScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollView.swift; sourceTree = "<group>"; };
+		1C965AF51FA281DF00FC15EB /* flickr_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flickr_response.json; sourceTree = "<group>"; };
 		1CE77CD91F9BFFBE00FADC90 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		1CE77CDB1F9C01F000FADC90 /* ImageViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelBuilder.swift; sourceTree = "<group>"; };
 		274145DDAFEF4885EE865833 /* Pods_InfiniteScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4136848A71FD367C1D0EF46E /* Pods-InfiniteScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollView/Pods-InfiniteScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		7197258EE08616A1460B05C9 /* Pods_InfiniteScrollViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteScrollViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3054D283E4399DB5D4CBF7 /* Pods-InfiniteScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollViewTests/Pods-InfiniteScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4982CFD12A67E8F929C8D0 /* Pods_InfiniteScrollViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +107,19 @@
 			children = (
 				1A2BA35BEA79A4BBC88C964E /* Pods-InfiniteScrollView.debug.xcconfig */,
 				4136848A71FD367C1D0EF46E /* Pods-InfiniteScrollView.release.xcconfig */,
+				06901FBB7E908FB8E47931A7 /* Pods-InfiniteScrollViewTests.debug.xcconfig */,
+				EB3054D283E4399DB5D4CBF7 /* Pods-InfiniteScrollViewTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		1C3BCBAB1F9FB86800F75F1E /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				1C3BCBAE1F9FB89A00F75F1E /* InfiniteScrollViewModuleBuilder.swift */,
+				1C3BCBB01F9FC27C00F75F1E /* InfiniteScrollViewDefaultModuleBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		1C3F98081F9B4F2000948C55 = {
@@ -133,7 +159,9 @@
 		1C3F98281F9B4F2000948C55 /* InfiniteScrollViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				1C3F98291F9B4F2000948C55 /* InfiniteScrollViewTests.swift */,
+				1C4F439C1FA3127B00ED1A73 /* Utils */,
+				1C965AF41FA281CC00FC15EB /* Resources */,
+				1C965AF11FA27EC800FC15EB /* Module */,
 				1C3F982B1F9B4F2000948C55 /* Info.plist */,
 			);
 			path = InfiniteScrollViewTests;
@@ -148,10 +176,27 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		1C4F43991FA311B400ED1A73 /* ViewModelBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				1C4F439A1FA311D800ED1A73 /* ImageViewModelBuilderSpec.swift */,
+			);
+			path = ViewModelBuilder;
+			sourceTree = "<group>";
+		};
+		1C4F439C1FA3127B00ED1A73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1C4F439D1FA3129200ED1A73 /* TestUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1C759A0F1F9B51BD00A90906 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1C759A151F9B58A400A90906 /* Image.swift */,
+				1C4E4FF41FA2756800EE0C16 /* DownloadableImage.swift */,
+				1C4E4FF01FA26C9700EE0C16 /* FlickrImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +204,7 @@
 		1C759A171F9B680100A90906 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				1C3BCBAB1F9FB86800F75F1E /* Builder */,
 				1C759A1E1F9B6C6C00A90906 /* Interactor */,
 				1C759A1D1F9B6C6200A90906 /* Presenter */,
 				1C759A1C1F9B6C5400A90906 /* View */,
@@ -206,6 +252,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		1C965AF11FA27EC800FC15EB /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1C4F43991FA311B400ED1A73 /* ViewModelBuilder */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		1C965AF41FA281CC00FC15EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C965AF51FA281DF00FC15EB /* flickr_response.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1CE77CD81F9BFF9F00FADC90 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				274145DDAFEF4885EE865833 /* Pods_InfiniteScrollView.framework */,
+				7197258EE08616A1460B05C9 /* Pods_InfiniteScrollViewTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,9 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C3F98311F9B4F2000948C55 /* Build configuration list for PBXNativeTarget "InfiniteScrollViewTests" */;
 			buildPhases = (
+				87254DC26CFD81BB54441006 /* [CP] Check Pods Manifest.lock */,
 				1C3F98211F9B4F2000948C55 /* Sources */,
 				1C3F98221F9B4F2000948C55 /* Frameworks */,
 				1C3F98231F9B4F2000948C55 /* Resources */,
+				63E4302C347C6E1370F58B09 /* [CP] Embed Pods Frameworks */,
+				BD28BB575CC85B7B80E1A948 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C965AF61FA281DF00FC15EB /* flickr_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +408,63 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollView/Pods-InfiniteScrollView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		63E4302C347C6E1370F58B09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollViewTests/Pods-InfiniteScrollViewTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollViewTests/Pods-InfiniteScrollViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87254DC26CFD81BB54441006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfiniteScrollViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD28BB575CC85B7B80E1A948 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollViewTests/Pods-InfiniteScrollViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BF3BC63B3672FFBE98F23E48 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,12 +474,16 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollView/Pods-InfiniteScrollView-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,8 +516,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4E4FF11FA26C9700EE0C16 /* FlickrImageModel.swift in Sources */,
 				1C759A331F9B8B6100A90906 /* InfiniteScrollView.swift in Sources */,
 				1C759A241F9B6F0C00A90906 /* ImageTableViewCell.swift in Sources */,
+				1C4E4FF51FA2756800EE0C16 /* DownloadableImage.swift in Sources */,
 				1CE77CDC1F9C01F000FADC90 /* ImageViewModelBuilder.swift in Sources */,
 				1C759A2B1F9B7BB300A90906 /* InfiniteScrollDefaultPresenter.swift in Sources */,
 				1C3F98151F9B4F2000948C55 /* AppDelegate.swift in Sources */,
@@ -397,10 +527,11 @@
 				1C759A2E1F9B7F5F00A90906 /* InfiniteScrollDefaultInteractor.swift in Sources */,
 				1C759A131F9B531C00A90906 /* FlickrImageService.swift in Sources */,
 				1C759A1A1F9B6A9D00A90906 /* InfiniteScrollViewController.swift in Sources */,
+				1C3BCBB11F9FC27C00F75F1E /* InfiniteScrollViewDefaultModuleBuilder.swift in Sources */,
 				1C759A0E1F9B511000A90906 /* ImageService.swift in Sources */,
 				1C759A291F9B799B00A90906 /* InfiniteScrollPresenter.swift in Sources */,
 				1C759A271F9B794100A90906 /* InfiniteScrollInteractor.swift in Sources */,
-				1C759A161F9B58A400A90906 /* Image.swift in Sources */,
+				1C3BCBAF1F9FB89A00F75F1E /* InfiniteScrollViewModuleBuilder.swift in Sources */,
 				1CE77CDA1F9BFFBE00FADC90 /* ImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +540,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3F982A1F9B4F2000948C55 /* InfiniteScrollViewTests.swift in Sources */,
+				1C4F439E1FA3129200ED1A73 /* TestUtils.swift in Sources */,
+				1C4F439B1FA311D800ED1A73 /* ImageViewModelBuilderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,11 +680,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DL9939M94T;
 				INFOPLIST_FILE = InfiniteScrollView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rcampos.InfiniteScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rcampos.iphone.InfiniteScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -565,11 +697,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DL9939M94T;
 				INFOPLIST_FILE = InfiniteScrollView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rcampos.InfiniteScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rcampos.iphone.InfiniteScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -578,6 +710,7 @@
 		};
 		1C3F98321F9B4F2000948C55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06901FBB7E908FB8E47931A7 /* Pods-InfiniteScrollViewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,6 +727,7 @@
 		};
 		1C3F98331F9B4F2000948C55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3054D283E4399DB5D4CBF7 /* Pods-InfiniteScrollViewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
