@@ -12,6 +12,5 @@ end
 target 'InfiniteScrollViewTests' do
     pod 'Quick'
     pod 'Nimble'
-    pod 'OHHTTPStubs/Swift'
     pod 'ObjectMapper'
 end
