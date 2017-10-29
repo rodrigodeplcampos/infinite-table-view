@@ -38,7 +38,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>FlickrAPIKey</key>
-	<string>3e7cc266ae2b0e0d78e279ce8e361736</string>
 </dict>
 </plist>
